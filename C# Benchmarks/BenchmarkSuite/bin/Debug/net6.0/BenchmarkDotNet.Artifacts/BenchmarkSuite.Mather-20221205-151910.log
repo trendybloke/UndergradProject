@@ -1,0 +1,10 @@
+// Validating benchmarks:
+No loggers defined, you will not see any progress!
+No exporters defined, results will not be persisted.
+No column providers defined, result table will be empty.
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 48 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\joshp\source\repos\BenchmarkSuite\BenchmarkSuite\bin\Debug\net6.0\b78b7de8-ba09-48a3-a5a7-6954ce2861a4
+// command took 2.03s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\joshp\source\repos\BenchmarkSuite\BenchmarkSuite\bin\Debug\net6.0\b78b7de8-ba09-48a3-a5a7-6954ce2861a4
