@@ -3,7 +3,7 @@ const Benchmark = require('benchmark')
 
 // Functions
 function iterative_factorial(number){
-    result = 1;
+    let result = 1;
     for(let i = 0; i < number + 1; i++){
         result = result * i;
     }
@@ -15,17 +15,17 @@ function recursive_factorial(number){
 }
 
 function iterative_sieve(limit){
-    var isPrime = [], output = []
+    let isPrime = [], output = []
 
-    for(var i = 0; i < limit; i++)
+    for(let i = 0; i < limit; i++)
         isPrime.push(true);
 
-    for(var i = 2; i <= Math.sqrt(limit) - 1; i++)
+    for(let i = 2; i <= Math.sqrt(limit) - 1; i++)
         if (isPrime[i])
-            for(var j = i * i; j < limit; j += i)
+            for(let j = i * i; j < limit; j += i)
                 isPrime[j] = false;
     
-    for(var i = 2; i < limit; i++)
+    for(let i = 2; i < limit; i++)
         if(isPrime[i] === true)
             output.push[i]
     
@@ -39,7 +39,7 @@ function segmented_sieve(limit){
     for(var i = 0; i < limit; i++)
         isPrime.push(true);
 
-    for(var lowerBound = 0; i < limit; lowerBound += step)
+    for(var lowerBound = 0; lowerBound < limit; lowerBound += step)
         var upperBound = lowerBound + step;
         for(var i = lowerBound; i <= Math.sqrt(upperBound) - 1; i++)
             if(isPrime[i] && i > 1)
@@ -71,21 +71,63 @@ function bubble_sort(list){
 }
 
 function array_search(list, item){
-    return list.find(element => element = item);
+    return list.find(element => element == item);
+}
+
+function linear_search(list, item) {
+    let exists = false;
+    for(const element of list){
+        exists = element == item;
+        if(exists){
+            break;
+        }
+    }
+    return exists;
 }
 
 // Benchmarks
 
-// Array.from(Array(1000)).map(x=>Math.floor(Math.random() * 1000))
+function random_array(size){
+    return Array.from(Array(size)).map(x=>Math.floor(Math.random() * size))
+}
 
-var bmark= new Benchmark("Array search (1000 items)", () => {
-    array_search(Array.from(Array(1000)).map(x=>Math.floor(Math.random() * 1000)), Math.floor(Math.random() * 1000))
-})
+const suite = new Benchmark.Suite('JS benchmarks');
 
-bmark.on("complete", () => {
-    console.log("Average time: " + String(bmark.stats.mean) + " seconds")
-})
-
-console.log(`Running ${bmark.name}...`)
-
-bmark.run();
+suite
+    .add('Iterative 5!', () => iterative_factorial(5))
+    .add('Iterative 10!', () => iterative_factorial(10))
+    .add('Iterative 15!', () => iterative_factorial(10))
+    .add('Iterative 20!', () => iterative_factorial(20))
+    .add('Recursive 5!', () => recursive_factorial(5))
+    .add('Recursive 10!', () => recursive_factorial(10))
+    .add('Recursive 15!', () => recursive_factorial(15))
+    .add('Recursive 20!', () => recursive_factorial(20))
+    .add('Iterative Sieve (Limit 100)', () => iterative_sieve(100))
+    .add('Iterative Sieve (Limit 200)', () => iterative_sieve(200))
+    .add('Iterative Sieve (Limit 500)', () => iterative_sieve(500))
+    .add('Iterative Sieve (Limit 1000)', () => iterative_sieve(1000))
+    .add('Segmented Sieve (Limit 100)', () => segmented_sieve(100))
+    .add('Segmented Sieve (Limit 200)', () => segmented_sieve(200))
+    .add('Segmented Sieve (Limit 500', () => segmented_sieve(500))
+    .add('Segmented Sieve (Limit 1000)', () => segmented_sieve(1000))
+    .add('Standard Sort (50 items)', () => array_sort(random_array(50)))
+    .add('Standard Sort (100 items)', () => array_sort(random_array(100)))
+    .add('Standard Sort (500 items)', () => array_sort(random_array(500)))
+    .add('Standard Sort (1000 items)', () => array_sort(random_array(1000)))
+    .add('Bubble Sort (50 items)', () => bubble_sort(random_array(50)))
+    .add('Bubble Sort (100 items)', () => bubble_sort(random_array(100)))
+    .add('Bubble Sort (500 items)', () => bubble_sort(random_array(500)))
+    .add('Bubble Sort (1000 items)', () => bubble_sort(random_array(1000)))
+    .add('Standard Search (50 items)', () => array_search(random_array(50), 42))
+    .add('Standard Search (100 items)', () => array_search(random_array(100), 42))
+    .add('Standard Search (500 items)', () => array_search(random_array(500), 42))
+    .add('Standard Search (1000 items)', () => array_search(random_array(1000), 42))
+    .add('Linear Search (50 items)', () => linear_search(random_array(50), 42))
+    .add('Linear Search (100 items)', () => linear_search(random_array(100), 42))
+    .add('Linear Search (500 items)', () => linear_search(random_array(500), 42))
+    .add('Linear Search (1000 items)', () => linear_search(random_array(1000), 42))
+    .on('cycle', event => {
+        const benchmark = event.target;
+        console.log(benchmark.toString());
+    })
+    .run();

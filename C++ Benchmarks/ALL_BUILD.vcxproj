@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{171F06A3-161E-3D31-A2B0-521B215720B4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" "-BC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" --check-stamp-file "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeCCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeCXXCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeRCCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" "-BC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" --check-stamp-file "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeCCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeCXXCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeRCCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" "-BC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" --check-stamp-file "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeCCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeCXXCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeRCCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" "-BC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" --check-stamp-file "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeCCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeCXXCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeRCCompiler.cmake;C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\3.26.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\ZERO_CHECK.vcxproj">
+      <Project>{3405ED39-F7DF-3D8E-8E38-30FC21009A27}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\args_product_test.vcxproj">
+      <Project>{5D9F12AC-A35E-3BE3-8606-692556707344}</Project>
+      <Name>args_product_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\basic_test.vcxproj">
+      <Project>{82EBFC85-00B4-3F3E-AE6C-CC011664F04F}</Project>
+      <Name>basic_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\src\benchmark.vcxproj">
+      <Project>{E6085919-E88D-31AE-8E07-5182E25D7F5F}</Project>
+      <Name>benchmark</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\benchmark_gtest.vcxproj">
+      <Project>{D84CB110-9536-352E-B64A-B5D7C43AF610}</Project>
+      <Name>benchmark_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\src\benchmark_main.vcxproj">
+      <Project>{8A7C3621-DC00-3C68-8DC4-C9BBED29B3D1}</Project>
+      <Name>benchmark_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\benchmark_min_time_flag_iters_test.vcxproj">
+      <Project>{6D2AFBF6-396C-3716-A7E0-C0800D8EC2D6}</Project>
+      <Name>benchmark_min_time_flag_iters_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\benchmark_min_time_flag_time_test.vcxproj">
+      <Project>{63A8A9EF-DDE1-341A-BC83-2859AE552B19}</Project>
+      <Name>benchmark_min_time_flag_time_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\benchmark_name_gtest.vcxproj">
+      <Project>{759A7D55-D26E-31FE-9853-F20E66B02D2A}</Project>
+      <Name>benchmark_name_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\benchmark_random_interleaving_gtest.vcxproj">
+      <Project>{5AD2549C-F038-3943-B3A2-C312A7216EAE}</Project>
+      <Name>benchmark_random_interleaving_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\benchmark_setup_teardown_test.vcxproj">
+      <Project>{49F741EA-4CAB-3F48-B071-36553CDED9AE}</Project>
+      <Name>benchmark_setup_teardown_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\benchmark_test.vcxproj">
+      <Project>{E9097305-81EE-34B5-ABBE-C5F33A7D89DB}</Project>
+      <Name>benchmark_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\benchmarks.vcxproj">
+      <Project>{E07F4493-D3E7-3521-8029-E1951C8BE93F}</Project>
+      <Name>benchmarks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\commandlineflags_gtest.vcxproj">
+      <Project>{67C950B4-6CCB-3484-96FB-FFFA9E9E9F46}</Project>
+      <Name>commandlineflags_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\complexity_test.vcxproj">
+      <Project>{213C53B5-B3C4-348A-AAB8-E807E1E821F0}</Project>
+      <Name>complexity_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\diagnostics_test.vcxproj">
+      <Project>{84E12B90-E5B3-3F5C-AD45-BD55E587D4EA}</Project>
+      <Name>diagnostics_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\display_aggregates_only_test.vcxproj">
+      <Project>{5A4F6D49-D44C-3397-A3F3-7B1B35609FC0}</Project>
+      <Name>display_aggregates_only_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\donotoptimize_test.vcxproj">
+      <Project>{2F4343C0-A989-38C6-AA15-74CE3A5E04CE}</Project>
+      <Name>donotoptimize_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\filter_test.vcxproj">
+      <Project>{2C364D19-6DD4-3A2E-8219-46F489EE201C}</Project>
+      <Name>filter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\fixture_test.vcxproj">
+      <Project>{A99B33BA-E324-38B3-ABFD-7950DFBF67E3}</Project>
+      <Name>fixture_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googletest-build\googlemock\gmock.vcxproj">
+      <Project>{D2BA7294-22DA-3DAE-AE57-62C1DF82BFF3}</Project>
+      <Name>gmock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googletest-build\googlemock\gmock_main.vcxproj">
+      <Project>{BF22008D-5F1E-39E5-9A98-EE3B863207BC}</Project>
+      <Name>gmock_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googletest-build\googletest\gtest.vcxproj">
+      <Project>{0046C93A-D197-321C-94F6-8142059CC859}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googletest-build\googletest\gtest_main.vcxproj">
+      <Project>{800F48AF-03D9-3B66-A0E4-7906817018D3}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\internal_threading_test.vcxproj">
+      <Project>{BC5441DE-3A84-3F18-9C0D-EF6FEA05EF4E}</Project>
+      <Name>internal_threading_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\link_main_test.vcxproj">
+      <Project>{E5C8E51E-734C-3778-A57D-F76481E6665D}</Project>
+      <Name>link_main_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\map_test.vcxproj">
+      <Project>{DDB6904E-4452-33CE-AFC5-4FC96E9555EA}</Project>
+      <Name>map_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\memory_manager_test.vcxproj">
+      <Project>{8B5CB00E-21DE-3F3C-A7B9-F920F0610BF9}</Project>
+      <Name>memory_manager_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\min_time_parse_gtest.vcxproj">
+      <Project>{5334CAC0-BE7E-3B14-802B-AEF545A2F862}</Project>
+      <Name>min_time_parse_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\multiple_ranges_test.vcxproj">
+      <Project>{1672B1B3-8F2E-3923-84E0-3487E5EF8935}</Project>
+      <Name>multiple_ranges_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\options_test.vcxproj">
+      <Project>{198EEA0E-33B5-331F-8CA2-569FBB801B4D}</Project>
+      <Name>options_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\output_test_helper.vcxproj">
+      <Project>{43A8F41A-0D2A-35E1-91D4-F03FA41098C4}</Project>
+      <Name>output_test_helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\perf_counters_gtest.vcxproj">
+      <Project>{2D7194A4-D75A-37DB-A9B0-251AB6EBB0DB}</Project>
+      <Name>perf_counters_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\perf_counters_test.vcxproj">
+      <Project>{74F679B6-EFF6-3FD1-B50B-872B0903F11B}</Project>
+      <Name>perf_counters_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\register_benchmark_test.vcxproj">
+      <Project>{8CA4C794-56BD-3C03-9301-959ADDC3E2EE}</Project>
+      <Name>register_benchmark_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\repetitions_test.vcxproj">
+      <Project>{82F96A11-1F4C-35A9-8E59-8B46228B8263}</Project>
+      <Name>repetitions_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\report_aggregates_only_test.vcxproj">
+      <Project>{CAF92730-8792-3ED6-A676-72D8966C8D76}</Project>
+      <Name>report_aggregates_only_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\reporter_output_test.vcxproj">
+      <Project>{EC8A0170-C7D6-31C5-8D8C-B797188FF520}</Project>
+      <Name>reporter_output_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\skip_with_error_test.vcxproj">
+      <Project>{DEB8922D-DB1F-35B3-9781-11A6939D93F1}</Project>
+      <Name>skip_with_error_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\spec_arg_test.vcxproj">
+      <Project>{7D9C31BB-B77C-3029-AD75-5B065D5AE802}</Project>
+      <Name>spec_arg_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\spec_arg_verbosity_test.vcxproj">
+      <Project>{A48F4A45-6F93-3CC5-97B4-729CAA9E2CD3}</Project>
+      <Name>spec_arg_verbosity_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\statistics_gtest.vcxproj">
+      <Project>{D949706A-08E7-3B1D-B042-660D97FE869D}</Project>
+      <Name>statistics_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\string_util_gtest.vcxproj">
+      <Project>{2D18222F-2687-3EFC-AA4B-89EAA65EA267}</Project>
+      <Name>string_util_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\templated_fixture_test.vcxproj">
+      <Project>{7D3DE5CD-31CA-32E5-B387-29735E17D087}</Project>
+      <Name>templated_fixture_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\time_unit_gtest.vcxproj">
+      <Project>{06E09277-6DB5-36B6-99C7-29C35C2A50A0}</Project>
+      <Name>time_unit_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\user_counters_tabular_test.vcxproj">
+      <Project>{CB74DCF8-0167-352C-98DB-ACC2B6DE8485}</Project>
+      <Name>user_counters_tabular_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\user_counters_test.vcxproj">
+      <Project>{720CAC31-F96A-3049-B225-642031157091}</Project>
+      <Name>user_counters_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build\test\user_counters_thousands_test.vcxproj">
+      <Project>{56CB138A-D494-3AA1-9034-6B7387B6F1A6}</Project>
+      <Name>user_counters_thousands_test</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

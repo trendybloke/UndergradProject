@@ -87,6 +87,19 @@ def standard_search(list, item):
     """
     return item in list
 
+def linear_search(list, item):
+    """
+    Iterates through list until item is found
+    """
+    exists = False
+    for element in list:
+        exists = element == item
+        if exists:
+            break
+        
+    return exists
+
+
 # Tests
 def test_iter_fact_five(benchmark):
     result = benchmark(iterative_factorial, 5)
@@ -169,13 +182,25 @@ def test_bubble_sort_thousand(benchmark):
     benchmark(bubble_sort, random.sample(range(1000), 1000))
 
 def test_std_search_fifty(benchmark):
-    benchmark(standard_search, random.sample(range(50), 50), random.randint(1, 50))
+    benchmark(standard_search, random.sample(range(50), 50), 42)
 
 def test_std_search_hundred(benchmark):
-    benchmark(standard_search, random.sample(range(100), 100), random.randint(1, 100))
+    benchmark(standard_search, random.sample(range(100), 100), 42)
 
 def test_std_search_five_hundred(benchmark):
-    benchmark(standard_search, random.sample(range(500), 500), random.randint(1, 500))
+    benchmark(standard_search, random.sample(range(500), 500), 42)
 
 def test_std_search_thousand(benchmark):
-    benchmark(standard_search, random.sample(range(1000), 1000), random.randint(1, 1000))
+    benchmark(standard_search, random.sample(range(1000), 1000), 42)
+    
+def test_lin_search_fifty(benchmark):
+    benchmark(linear_search, random.sample(range(50), 50), 42)
+    
+def test_lin_search_hundred(benchmark):
+    benchmark(linear_search, random.sample(range(100), 100), 42)
+    
+def test_lin_search_five_hundred(benchmark):
+    benchmark(linear_search, random.sample(range(500), 500), 42)
+    
+def test_lin_search_thousand(benchmark):
+    benchmark(linear_search, random.sample(range(1000), 1000), 42)
