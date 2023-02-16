@@ -1,0 +1,10 @@
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SRC\TEST\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" "-BC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" --check-stamp-file "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-build/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

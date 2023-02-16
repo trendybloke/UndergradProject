@@ -1,0 +1,10 @@
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\CMAKEFILES\B31B26FDBD8101BF093997869406B31E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" "-BC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/benchmarks.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

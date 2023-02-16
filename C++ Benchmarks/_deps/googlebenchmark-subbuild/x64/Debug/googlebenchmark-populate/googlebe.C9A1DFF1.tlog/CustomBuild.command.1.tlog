@@ -1,0 +1,150 @@
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\765539654E5819D017ACA7E97FB8A313\GOOGLEBENCHMARK-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/tmp/googlebenchmark-populate-mkdirs.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/Debug/googlebenchmark-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\765539654E5819D017ACA7E97FB8A313\GOOGLEBENCHMARK-POPULATE-DOWNLOAD.RULE
+setlocal
+cd "C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/tmp/googlebenchmark-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/Debug/googlebenchmark-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\765539654E5819D017ACA7E97FB8A313\GOOGLEBENCHMARK-POPULATE-UPDATE.RULE
+setlocal
+cd "C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-src"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/tmp/googlebenchmark-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\765539654E5819D017ACA7E97FB8A313\GOOGLEBENCHMARK-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/Debug/googlebenchmark-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\765539654E5819D017ACA7E97FB8A313\GOOGLEBENCHMARK-POPULATE-CONFIGURE.RULE
+setlocal
+cd "C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/Debug/googlebenchmark-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\765539654E5819D017ACA7E97FB8A313\GOOGLEBENCHMARK-POPULATE-BUILD.RULE
+setlocal
+cd "C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/Debug/googlebenchmark-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\765539654E5819D017ACA7E97FB8A313\GOOGLEBENCHMARK-POPULATE-INSTALL.RULE
+setlocal
+cd "C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/Debug/googlebenchmark-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\765539654E5819D017ACA7E97FB8A313\GOOGLEBENCHMARK-POPULATE-TEST.RULE
+setlocal
+cd "C:\Users\joshp\Desktop\uni work\Year 3\Project\C++ Benchmarks\_deps\googlebenchmark-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/Debug/googlebenchmark-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\7D3482CDE8D6535DF49FB3D57E844B32\GOOGLEBENCHMARK-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/CMakeFiles/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/CMakeFiles/Debug/googlebenchmark-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/Debug/googlebenchmark-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKEFILES\29BCF42D2C61D366C2B5FCF361525661\GOOGLEBENCHMARK-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\JOSHP\DESKTOP\UNI WORK\YEAR 3\PROJECT\C++ BENCHMARKS\_DEPS\GOOGLEBENCHMARK-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild" "-BC:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild" --check-stamp-file "C:/Users/joshp/Desktop/uni work/Year 3/Project/C++ Benchmarks/_deps/googlebenchmark-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
